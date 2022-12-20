@@ -1,6 +1,6 @@
 from .pages.customer_page import CustomerPage
 from .pages.data_page import TestUser2
-import time
+
 
 
 def test_login_user(browser):
