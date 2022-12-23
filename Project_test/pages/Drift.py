@@ -9,9 +9,3 @@ class MyClass():
         print("Total objects: ", cls.TOTAL_OBJECTS)
 
 
-
-my_obj1 = MyClass()
-my_obj2 = MyClass()
-my_obj3 = MyClass()
-
-MyClass.total_objects()
