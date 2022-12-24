@@ -1,32 +1,39 @@
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from .locators import BasePageLocators
+from selenium.webdriver.support.event_firing_webdriver import EventFiringWebDriver
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.common.by import By
 
 
-class BasePage():
+class BasePage:
+    """Базовый класс для работы с основными методами браузера и элементами"""
+    BUTTON_HOME = (By.CSS_SELECTOR, "[ng-click='home()']")
 
-    def __init__(self, browser, url, timeout=10):
+    def __init__(self, browser: EventFiringWebDriver, timeout: int = 10):
         self.browser = browser
-        self.url = url
         self.browser.implicitly_wait(timeout)
 
-    def open(self):
-        self.browser.get(self.url)
+    def find_element(self, locator) -> WebElement:
+        return self.browser.find_element(by=locator[0], value=locator[1])
+
+    def find_elements(self, locator) -> list[WebElement]:
+        return self.browser.find_elements(by=locator[0], value=locator[1])
+
+    def open(self, url):
+        """Открыть страницу"""
+        self.browser.get(url=url)
 
     def go_to_home(self):
-        btn_home = self.browser.find_element(*BasePageLocators.BUTTON_HOME)
+        """Переход на домашнюю страницу"""
+        btn_home = self.find_element(self.BUTTON_HOME)
         btn_home.click()
 
     def check_title(self):
+        """Проверка заголовка страницы"""
         title = self.browser.title
-        assert title == "XYZ Bank"
+        assert title == "XYZ Bank", "Заголовок страницы не верный"
 
-    def url_check(self, expected_url, actual_url):
-        assert actual_url in expected_url
+    @staticmethod
+    def check_url(expected_url, actual_url):
+        """Проверка url`а текущей страницы"""
+        assert actual_url in expected_url, 'Url текущей страницы не совпадает'
 
-    def names_list_cycle_text(self, line):
-        lst = list()
-        for element in self.browser.find_elements_by_xpath(line):
-            lst.append(element)
-        return lst
+

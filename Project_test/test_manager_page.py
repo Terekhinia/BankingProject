@@ -1,6 +1,5 @@
 from .pages.manager_page import ManagerPage
 from .pages.data_page import TestUser1
-import time
 
 
 class TestCheckCreateAndDeleteUser1:

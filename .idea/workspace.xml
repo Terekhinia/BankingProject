@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5b0f31-fa79-47a1-be49-04e9a20e40b0" name="Changes" comment="Initial commit" />
+    <list default="true" id="ba5b0f31-fa79-47a1-be49-04e9a20e40b0" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/pages/customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/pages/customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/pages/data_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/pages/data_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/pages/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/pages/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/pages/manager_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/test_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/test_customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/test_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/test_login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_test/test_manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_test/test_manager_page.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671807006586</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1671807338770</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671807338770</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial commit">
+      <created>1671807360626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671807360626</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
