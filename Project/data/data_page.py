@@ -16,3 +16,5 @@ class URL:
     HOME = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'
     MANAGER = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager'
     CUSTOMER = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer'
+
+

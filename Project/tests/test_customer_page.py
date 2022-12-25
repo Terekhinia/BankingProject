@@ -1,7 +1,5 @@
-from .pages.customer_page import CustomerPage
-from .pages.data_page import TestUser2
-
-
+from Project.pages.customer_page import CustomerPage
+from Project.data.data_page import TestUser2
 
 def test_login_user(browser):
     url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer'
@@ -12,3 +10,4 @@ def test_login_user(browser):
     page.click_button_login()
     actual_name = page.get_welcome()
     page.check_welcome(expected_name=name, actual_name=actual_name)
+

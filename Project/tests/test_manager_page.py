@@ -1,5 +1,5 @@
-from .pages.manager_page import ManagerPage
-from .pages.data_page import TestUser1
+from Project.pages.manager_page import ManagerPage
+from Project.data.data_page import TestUser1
 
 
 class TestCheckCreateAndDeleteUser1:
@@ -8,8 +8,8 @@ class TestCheckCreateAndDeleteUser1:
 
     def test_check_fill_name_and_post(self, browser):
         url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager'
-        page = ManagerPage(browser, url)
-        page.open()
+        page = ManagerPage(browser)
+        page.open(url)
         page.click_tab_add_customer()
         page.fill_first_name(TestUser1.FIRST_NAME)
         page.fill_last_name(TestUser1.LAST_NAME)
@@ -18,9 +18,8 @@ class TestCheckCreateAndDeleteUser1:
         browser.switch_to.alert.accept()
 
     def test_check_fill_currency(self, browser):
-        url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager'
         TestCheckCreateAndDeleteUser1.test_check_fill_name_and_post(self, browser)
-        page = ManagerPage(browser, url)
+        page = ManagerPage(browser)
         page.click_tab_open_account()
         customer_name = f'{TestUser1.FIRST_NAME} {TestUser1.LAST_NAME}'
         page.search_customer_name(customer_name)
@@ -32,9 +31,8 @@ class TestCheckCreateAndDeleteUser1:
         browser.switch_to.alert.accept()
 
     def test_check_customers(self, browser):
-        url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager'
         TestCheckCreateAndDeleteUser1.test_check_fill_currency(self, browser)
-        page = ManagerPage(browser, url)
+        page = ManagerPage(browser)
         page.click_tab_customer()
         page.fill_search_customer(TestUser1.FIRST_NAME)
         actual_first_name = page.get_first_name_customer()
@@ -47,9 +45,8 @@ class TestCheckCreateAndDeleteUser1:
         page.check_customer_id(expected_customer_id=self.user_id, actual_customer_id=actual_customer_id)
 
     def test_check_delete_user(self, browser):
-        url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager'
         TestCheckCreateAndDeleteUser1.test_check_customers(self, browser)
-        page = ManagerPage(browser, url)
+        page = ManagerPage(browser)
         page.click_delete()
-        actual_number = page.get_quantity_string_in_table_users()
-        page.check_delete_user(actual_number)
+        actual_number = page.get_quantity_string_in_table_customer()
+        page.check_delete_customer(actual_number)

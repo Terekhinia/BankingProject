@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 class BasePage:
     """Базовый класс для работы с основными методами браузера и элементами"""
-    BUTTON_HOME = (By.CSS_SELECTOR, "[ng-click='home()']")
+    BUTTON_HOME = (By.XPATH, "//*[@ng-click='home()']")
 
     def __init__(self, browser: EventFiringWebDriver, timeout: int = 10):
         self.browser = browser

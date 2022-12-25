@@ -1,6 +1,6 @@
-from .pages.base_page import BasePage
-from .pages.login_page import LoginPage
-from .pages.data_page import URL
+from Project.base.base_page import BasePage
+from Project.pages.login_page import LoginPage
+from Project.data.data_page import URL
 import time
 
 def test_check_title(browser):
