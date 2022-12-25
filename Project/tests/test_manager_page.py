@@ -1,5 +1,5 @@
 from Project.pages.manager_page import ManagerPage
-from Project.data.data_page import TestUser1
+from Project.data.data_page import *
 
 
 class TestCheckCreateAndDeleteUser1:
@@ -7,9 +7,8 @@ class TestCheckCreateAndDeleteUser1:
         self.user_id = None
 
     def test_check_fill_name_and_post(self, browser):
-        url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager'
         page = ManagerPage(browser)
-        page.open(url)
+        page.open(URL.MANAGER)
         page.click_tab_add_customer()
         page.fill_first_name(TestUser1.FIRST_NAME)
         page.fill_last_name(TestUser1.LAST_NAME)

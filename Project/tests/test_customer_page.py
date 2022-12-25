@@ -1,10 +1,9 @@
 from Project.pages.customer_page import CustomerPage
-from Project.data.data_page import TestUser2
+from Project.data.data_page import *
 
 def test_login_user(browser):
-    url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer'
     page = CustomerPage(browser)
-    page.open(url)
+    page.open(URL.CUSTOMER)
     name = f'{TestUser2.FIRST_NAME} {TestUser2.LAST_NAME}'
     page.search_your_name(name)
     page.click_button_login()
