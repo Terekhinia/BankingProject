@@ -72,12 +72,18 @@ class ManagerPage(BasePage):
         button_add_customer.click()
 
     def search_customer_name(self, customer):
-        """Кликнуть на выпадающий список 'Customer Name' во вкладке Open Account"""
+        """Выбор имени пользователя из выпадающего списка
+        Args:
+            Customer Name: имя пользователя. Пример "Sirius"
+        """
         choose_customer = self.browser.find_element(self.choose_customer(customer))
         choose_customer.click()
 
     def search_currency(self, currency):
-        """Кликнуть на выпадающий список 'Currency' во вкладке Open Account"""
+        """Выбор валюты из выпадающего списка
+        Args:
+            Currency: валюта. Пример "Ruppy"
+        """
         choose_customer = self.browser.find_element(self.choose_currency(currency))
         choose_customer.click()
 

@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba5b0f31-fa79-47a1-be49-04e9a20e40b0" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/Project/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/pages/customer_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/webdrivers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/pages/Drift.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/pages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/base/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/base/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/pages/customer_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/pages/data_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/data/data_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/pages/login_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/pages/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pages/manager_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/test_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/test_customer_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/test_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/test_login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_test/test_manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/test_manager_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pages/customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pages/customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pages/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pages/manager_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +64,11 @@
       <recent name="C:\Users\User\BankingProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\BankingProject\Project\webdrivers" />
+      <recent name="C:\Users\User\BankingProject" />
       <recent name="C:\Users\User\BankingProject\Project\tests" />
       <recent name="C:\Users\User\BankingProject\Project" />
       <recent name="C:\Users\User\BankingProject\Project_test\webdrivers" />
-      <recent name="C:\Users\User\BankingProject\Project_test" />
-      <recent name="C:\Users\User\BankingProject\Project_test\tests" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671925475051</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Initial commit">
+      <created>1672009234601</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672009234601</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
