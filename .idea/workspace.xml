@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba5b0f31-fa79-47a1-be49-04e9a20e40b0" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/Project/pages/account_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/tests/conf_test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/tests/test_account_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/base/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/base/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/data/data_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/data/data_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pages/customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pages/customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pages/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/pages/manager_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/tests/test_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/test_customer_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/tests/test_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/test_login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/tests/test_manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/tests/test_manager_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672010282930</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Initial commit">
+      <created>1672012091982</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672012091982</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">

@@ -5,8 +5,7 @@ from Project.base.base_page import BasePage
 from selenium.webdriver.common.by import By
 
 class CustomerPage(BasePage):
-    BUTTON_LOGIN = (By.XPATH, "//*[@class = btn.btn-default")
-    WELCOME = (By.XPATH, '//*[@class = fontBig.ng-binding')
+    BUTTON_LOGIN = (By.XPATH, "//*[@class = 'btn btn-default']")
 
     def choose_your_name(self, name):
         """Составление XPATH-запроса для поиска локатора с пользователем из выпадающего списка"""
@@ -28,13 +27,4 @@ class CustomerPage(BasePage):
         button_login = self.find_element(self.BUTTON_LOGIN)
         button_login.click()
 
-    def get_welcome(self):
-        """Получение текста приветственного сообщения"""
-        welcome = self.find_element(self.WELCOME)
-        return welcome.text
-
-    @staticmethod
-    def check_welcome(expected_name, actual_name):
-        """Проверка текста приветственного сообщения"""
-        assert expected_name == actual_name, 'Приветственное сообщение не совпадает!'
 

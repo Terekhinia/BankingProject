@@ -38,37 +38,37 @@ class ManagerPage(BasePage):
 
     def click_tab_add_customer(self):
         """Кликнуть на вкладку Add Customer"""
-        tab_add_customer = self.browser.find_element(self.TAB_ADD_CUSTOMMER)
+        tab_add_customer = self.find_element(self.TAB_ADD_CUSTOMMER)
         tab_add_customer.click()
 
     def click_tab_open_account(self):
         """Кликнуть на вкладку Open Account"""
-        tab_add_customer = self.browser.find_element(self.TAB_OPEN_ACCOUNT)
+        tab_add_customer = self.find_element(self.TAB_OPEN_ACCOUNT)
         tab_add_customer.click()
 
     def click_tab_customer(self):
         """Кликнуть на вкладку Customers"""
-        tab_add_customer = self.browser.find_element(self.TAB_CUSTOMMER)
+        tab_add_customer = self.find_element(self.TAB_CUSTOMMER)
         tab_add_customer.click()
 
     def fill_first_name(self, first_name):
         """Заполнение поля 'First Name' на вкладке Add Customer"""
-        placeholder_first_name = self.browser.find_element(self.PLACEHOLDER_FIRST_NAME)
+        placeholder_first_name = self.find_element(self.PLACEHOLDER_FIRST_NAME)
         placeholder_first_name.send_keys(first_name)
 
     def fill_last_name(self, last_name):
         """Заполнение поля 'Last Name' на вкладке Add Customer"""
-        placeholder_first_name = self.browser.find_element(self.PLACEHOLDER_LAST_NAME)
+        placeholder_first_name = self.find_element(self.PLACEHOLDER_LAST_NAME)
         placeholder_first_name.send_keys(last_name)
 
     def fill_post_code(self, post_code):
         """Заполнение поля 'Post Code' на вкладке Add Customer"""
-        placeholder_post_code = self.browser.find_element(self.PLACEHOLDER_POST_CODE)
+        placeholder_post_code = self.find_element(self.PLACEHOLDER_POST_CODE)
         placeholder_post_code.send_keys(post_code)
 
     def click_button_add_customer(self):
         """Кликнуть на кнопку 'Add Customer' во вкладке Add Customer"""
-        button_add_customer = self.browser.find_element(self.BUTTON_ADD_CUSTOMMER)
+        button_add_customer = self.find_element(self.BUTTON_ADD_CUSTOMMER)
         button_add_customer.click()
 
     def search_customer_name(self, customer):
@@ -76,7 +76,7 @@ class ManagerPage(BasePage):
         Args:
             Customer Name: имя пользователя. Пример "Sirius"
         """
-        choose_customer = self.browser.find_element(self.choose_customer(customer))
+        choose_customer = self.find_element(self.choose_customer(customer))
         choose_customer.click()
 
     def search_currency(self, currency):
@@ -84,37 +84,37 @@ class ManagerPage(BasePage):
         Args:
             Currency: валюта. Пример "Ruppy"
         """
-        choose_customer = self.browser.find_element(self.choose_currency(currency))
+        choose_customer = self.find_element(self.choose_currency(currency))
         choose_customer.click()
 
     def click_button_process(self):
         """Кликнуть на кнопку 'Process' во вкладке Open Account"""
-        button_add_process = self.browser.find_element(self.BUTTON_PROCESS)
+        button_add_process = self.find_element(self.BUTTON_PROCESS)
         button_add_process.click()
 
     def fill_search_customer(self, customer_name):
         """Заполнение поля 'Serch Customer' во вкладке Customers"""
-        placeholder_search_customer = self.browser.find_element(self.PLACEHOLDER_SEARCH_CUSTOMER)
+        placeholder_search_customer = self.find_element(self.PLACEHOLDER_SEARCH_CUSTOMER)
         placeholder_search_customer.send_keys(customer_name)
 
     def get_first_name_customer(self):
         """Получить значение First Name в таблице во вкладке Customers"""
-        get_first_name = self.browser.find_element(self.SERCH_CASTOMER_FIRST_NAME)
+        get_first_name = self.find_element(self.SERCH_CASTOMER_FIRST_NAME)
         return get_first_name.text
 
     def get_last_name_customer(self):
         """Получить значение Last Name в таблице во вкладке Customers"""
-        get_last_name = self.browser.find_element(self.SERCH_CASTOMER_LAST_NAME)
+        get_last_name = self.find_element(self.SERCH_CASTOMER_LAST_NAME)
         return get_last_name.text
 
     def get_post_code_customer(self):
         """Получить значение Post Code в таблице во вкладке Customers"""
-        get_post_code = self.browser.find_element(self.SERCH_CASTOMER_POST_CODE)
+        get_post_code = self.find_element(self.SERCH_CASTOMER_POST_CODE)
         return get_post_code.text
 
     def get_customer_id(self):
         """Получить id созданного пользователя из таблицы во вкладке Customers"""
-        customer_id = self.browser.find_element(self.FILL_CUSTOMER_ID)
+        customer_id = self.find_element(self.FILL_CUSTOMER_ID)
         return customer_id.text
 
     @staticmethod
@@ -145,7 +145,7 @@ class ManagerPage(BasePage):
     def get_quantity_string_in_table_customer(self):
         """Получение количества строк в таблице Customer"""
         lst = list()
-        for element in self.browser.find_elements(self.STRING_TABLE_WITH_USERS):
+        for element in self.find_elements(self.STRING_TABLE_WITH_USERS):
             lst.append(element)
         return len(lst)
 

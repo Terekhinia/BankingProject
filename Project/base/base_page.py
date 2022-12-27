@@ -1,7 +1,8 @@
 from selenium.webdriver.support.event_firing_webdriver import EventFiringWebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class BasePage:
     """Базовый класс для работы с основными методами браузера и элементами"""
@@ -36,4 +37,10 @@ class BasePage:
         """Проверка url`а текущей страницы"""
         assert actual_url in expected_url, 'Url текущей страницы не совпадает'
 
+    @staticmethod
+    def webdriverwait_check_url(browser, url):
+        """Проверка url`а текущей страницы, ожидание 5сек."""
+        WebDriverWait(browser, 5).until(
+            EC.url_contains((url))
+        )
 
