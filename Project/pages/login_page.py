@@ -4,7 +4,6 @@
 from Project.base.base_page import BasePage
 from selenium.webdriver.common.by import By
 
-
 class LoginPage(BasePage):
 
     BUTTON_CUSTOMMER_LOGIN = (By.XPATH, "//*[@ng-click='customer()']")
