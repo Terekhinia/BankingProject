@@ -15,4 +15,4 @@ def test_check_logout(browser):
     page = AccountPage(browser)
     page.click_button_logout()
     page_base = BasePage(browser)
-    page_base.webdriverwait_check_url(browser, URL.CUSTOMER)
+    page_base.webdriverwait_check_url(URL.CUSTOMER)
