@@ -1,7 +1,7 @@
-from Project.tests.conf_test_data import *
+from Project.tests.conf_test_data import test_logging_user1
 from Project.pages.account_page import AccountPage
 from Project.base.base_page import BasePage
-from Project.data.data_page import *
+from Project.data.data_page import TestUser1, URL
 
 def test_check_welcom(browser):
     test_logging_user1(browser)

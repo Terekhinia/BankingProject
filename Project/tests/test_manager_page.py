@@ -1,5 +1,5 @@
 from Project.pages.manager_page import ManagerPage
-from Project.data.data_page import *
+from Project.data.data_page import TestUser1, URL
 
 
 class TestCheckCreateAndDeleteUser1:
@@ -49,3 +49,4 @@ class TestCheckCreateAndDeleteUser1:
         page.click_delete()
         actual_number = page.get_quantity_string_in_table_customer()
         page.check_delete_customer(actual_number)
+
