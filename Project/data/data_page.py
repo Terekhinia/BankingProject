@@ -1,3 +1,4 @@
+"""Модуль содержит тестовые данные для тестов"""
 
 class TestUser1:
     FIRST_NAME = 'Sirius'
@@ -5,12 +6,10 @@ class TestUser1:
     POST_CODE = 'E7777'
     CURRENCY = 'Rupee'
 
-
 class TestUser2:
     FIRST_NAME = 'Harry'
     LAST_NAME = 'Potter'
     CURRENCY = 'Dollar'
-
 
 class URL:
     HOME = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'

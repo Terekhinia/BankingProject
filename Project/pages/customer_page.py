@@ -9,9 +9,7 @@ class CustomerPage(BasePage):
 
     def choose_your_name(self, name):
         """Составление XPATH-запроса для поиска локатора с пользователем из выпадающего списка"""
-        line = f"//select[@id='userSelect']/option[text()='{name}']"
-        CHOOSE_YOUR_NAME = (By.XPATH, line)
-        return CHOOSE_YOUR_NAME
+        return (By.XPATH, f"//select[@id='userSelect']/option[text()='{name}']")
 
     def search_your_name(self, name):
         """Выбор пользователя из выпадающего списка

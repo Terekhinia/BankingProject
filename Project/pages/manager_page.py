@@ -139,7 +139,7 @@ class ManagerPage(BasePage):
 
     def click_delete(self):
         """Кликнуть на кнопку 'Delete' в таблице Customer"""
-        button_delete = self.browser.find_element(self.BUTTON_DELETE)
+        button_delete = self.find_element(self.BUTTON_DELETE)
         button_delete.click()
 
     def get_quantity_string_in_table_customer(self):
@@ -153,4 +153,7 @@ class ManagerPage(BasePage):
     def check_delete_customer(actual_number):
         """Проверка что строки в таблице нет после удаления"""
         assert actual_number == 0,  "Запись с пользователем не удалена"
+
+    def close_alert(self):
+        self.browser.switch_to.alert.accept()
 

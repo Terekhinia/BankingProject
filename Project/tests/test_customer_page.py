@@ -1,6 +1,7 @@
 from Project.base.base_page import BasePage
-from Project.tests.conf_test_data import *
-from Project.data.data_page import *
+from Project.pages.customer_page import CustomerPage
+from Project.tests.conf_test_data import test_create_user1
+from Project.data.data_page import URL, TestUser1
 
 def test_login_user(browser):
     test_create_user1(browser)  # Функция для заведения User1
@@ -10,7 +11,7 @@ def test_login_user(browser):
     page.search_your_name(name)
     page.click_button_login()
     page_base = BasePage(browser)
-    page_base.webdriverwait_check_url(browser, URL.ACCOUNT)
+    page_base.webdriverwait_check_url(URL.ACCOUNT)
 
 
 

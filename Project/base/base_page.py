@@ -10,7 +10,7 @@ class BasePage:
 
     def __init__(self, browser: EventFiringWebDriver, timeout: int = 10):
         self.browser = browser
-        self.browser.implicitly_wait(timeout)
+        self.wait = WebDriverWait(self.browser, timeout)
 
     def find_element(self, locator) -> WebElement:
         return self.browser.find_element(by=locator[0], value=locator[1])
@@ -37,10 +37,9 @@ class BasePage:
         """Проверка url`а текущей страницы"""
         assert actual_url in expected_url, 'Url текущей страницы не совпадает'
 
-    @staticmethod
-    def webdriverwait_check_url(browser, url):
+
+    def webdriverwait_check_url(self, url):
         """Проверка url`а текущей страницы, ожидание 5сек."""
-        WebDriverWait(browser, 5).until(
-            EC.url_contains((url))
-        )
+        self.wait.until(EC.url_contains(url))
+
 
