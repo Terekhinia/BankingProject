@@ -5,7 +5,6 @@ from Project.base.base_page import BasePage
 from Project.pages.manager_page import ManagerPage
 from Project.pages.customer_page import CustomerPage
 from Project.data.data_page import TestUser1, URL
-import time
 
 def test_create_user1(browser):
     page = ManagerPage(browser)
