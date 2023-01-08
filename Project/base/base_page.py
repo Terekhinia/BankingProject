@@ -3,6 +3,8 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import time
+
 
 class BasePage:
     """Базовый класс для работы с основными методами браузера и элементами"""
@@ -11,6 +13,11 @@ class BasePage:
     def __init__(self, browser: EventFiringWebDriver, timeout: int = 10):
         self.browser = browser
         self.wait = WebDriverWait(self.browser, timeout)
+        self.browser.implicitly_wait(timeout)
+
+    # def find_element_located(self, link, timeout=5):
+    #     WbDrW = WebDriverWait(self.driver, timeout)
+    #     return WbDrW.until(EC.presence_of_element_located(link))
 
     def find_element(self, locator) -> WebElement:
         return self.browser.find_element(by=locator[0], value=locator[1])
@@ -39,7 +46,11 @@ class BasePage:
 
 
     def webdriverwait_check_url(self, url):
-        """Проверка url`а текущей страницы, ожидание 5сек."""
+        """Проверка url`а текущей страницы с ожиданием"""
         self.wait.until(EC.url_contains(url))
+
+    @staticmethod
+    def waiting(sec):
+        time.sleep(sec)
 
 

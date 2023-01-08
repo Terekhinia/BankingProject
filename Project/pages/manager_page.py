@@ -4,6 +4,7 @@
 from Project.base.base_page import BasePage
 from selenium.webdriver.common.by import By
 
+
 class ManagerPage(BasePage):
 
     TAB_ADD_CUSTOMMER = (By.XPATH, "//*[@ng-class='btnClass1']")
@@ -156,4 +157,6 @@ class ManagerPage(BasePage):
 
     def close_alert(self):
         self.browser.switch_to.alert.accept()
+
+
 

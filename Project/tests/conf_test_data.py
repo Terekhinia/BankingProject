@@ -1,6 +1,7 @@
 """
 Модуль содержит методы для настройки тестовых данных необходимых для прохождения тестов
 """
+from Project.base.base_page import BasePage
 from Project.pages.manager_page import ManagerPage
 from Project.pages.customer_page import CustomerPage
 from Project.data.data_page import TestUser1, URL
@@ -25,8 +26,9 @@ def test_create_user1(browser):
 def test_logging_user1(browser):
     test_create_user1(browser)  # Функция для заведения User1
     page = CustomerPage(browser)
+    page_base = BasePage(browser)
     page.open(URL.CUSTOMER)
-    time.sleep(0.5)  # Не успевает сформироваться переменная поэтому оставил явное ожидание
+    page_base.waiting(1)
     name = f'{TestUser1.FIRST_NAME} {TestUser1.LAST_NAME}'
     page.search_your_name(name)
     page.click_button_login()
